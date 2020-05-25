@@ -7,7 +7,7 @@ const App = () => {
     return (
         <>
             <Route component={TodoList} path={['/@:username', '/']} />
-            <Route component={TodoWrite} path="/write" />]
+            <Route component={TodoWrite} path="/write" />
         </>
     );
 };
