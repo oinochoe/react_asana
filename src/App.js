@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import TodoList from './pages/TodoList';
-import TodoWrite from './pages/TodoWrite';
+import TodoListPage from './pages/TodoListPage';
+import TodoWritePage from './pages/TodoWritePage';
 
 const App = () => {
     return (
         <>
-            <Route component={TodoList} path={['/@:username', '/']} />
-            <Route component={TodoWrite} path="/write" />
+            <Route component={TodoListPage} path={['/@:username', '/']} />
+            <Route component={TodoWritePage} path="/write" />
         </>
     );
 };

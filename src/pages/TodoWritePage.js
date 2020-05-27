@@ -1,7 +1,7 @@
 import React from 'react';
 
-const TodoWrite = () => {
+const TodoWritePage = () => {
     return <div>글쓰기</div>;
 };
 
-export default TodoWrite;
+export default TodoWritePage;
