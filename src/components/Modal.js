@@ -1,10 +1,10 @@
 import React from 'react';
 import Choreograph from 'react-choreograph';
 
-import { connect } from '../../state';
-import { setModal } from '../../state/actions';
+import { connect } from '../state';
+import { setModal } from '../state/actions';
 import { modalContent } from './ModalContent';
-import * as Styled from '../../styles/Modal';
+import * as Styled from '../styles/Modal';
 
 const enter = [
     { overlay: 'is-active' },
@@ -30,7 +30,6 @@ class ModalComponent extends React.PureComponent {
                             ref={setRef('overlay')}
                             onClick={() => setModal({ active: false })}
                         />
-
                         <Styled.ModalWindow
                             ref={setRef('window')}
                             width={this.props.width}

@@ -5,13 +5,13 @@ import * as Type from '../styles/Typography';
 
 const DeleteTasksModal = () => (
     <div>
-        <Type.P>You want to remove everything? They're not coming back.</Type.P>
+        <Type.P>전체 삭제하시겠습니까?</Type.P>
         <div style={{ textAlign: 'right' }}>
             <Button
                 margin="0 1rem 0 0"
                 onClick={() => setModal({ active: false })}
             >
-                Cancel
+                취소
             </Button>
             <Button
                 mode="caution"
@@ -20,7 +20,7 @@ const DeleteTasksModal = () => (
                     setModal({ active: false });
                 }}
             >
-                Delete
+                삭제
             </Button>
         </div>
     </div>
