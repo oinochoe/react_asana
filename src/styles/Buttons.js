@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { colors } from './';
 
+// mode를 정하여 스타일을 각각 준다.
 const modes = {
     primary: {
         background: 'transparent',
@@ -16,8 +17,10 @@ const modes = {
     },
 };
 
+// 기본 modeValue 선언
 const modeValue = (key) => ({ mode = 'primary' }) => modes[mode][key];
 
+// buttonStyle을 선언하여 css를 선언한다.
 export const buttonStyles = css`
     background: ${modeValue('background')};
     border: 1px solid ${modeValue('border')};

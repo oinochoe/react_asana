@@ -1,3 +1,4 @@
+// 컬러 스타일들 상수 선언
 export const colors = {
     gray05: '#ECEFF1',
     gray10: '#CFD8DC',

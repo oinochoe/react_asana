@@ -1,28 +1,32 @@
 import { createGlobalStyle } from 'styled-components';
 import { colors } from './';
 
+// 글로벌 스타일이 필요하여 선언
 export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 10px;
 
     * {
-      box-sizing: inherit;
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+      border:0;
     }
   }
 
   body {
-    background: ${colors.gray05};
-    font-family: sans-serif;
     margin: 0;
+    background: ${colors.offwhite};
+    font-family: sans-serif;
   }
 
   button {
+    border: 0;
+    padding: 0;
     appearance: none;
     background: none;
-    border: 0;
-    cursor: pointer;
     font-size: 1rem;
-    padding: 0;
+    cursor: pointer;
   }
 `;

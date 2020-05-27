@@ -13,6 +13,6 @@ export const FILTERS = {
     },
 };
 
-export const STORAGE_KEY = 'stored-task-state';
+export const STORAGE_KEY = 'localstorage-task';
 
 export const TITLE = '아사나 보다 더??';
